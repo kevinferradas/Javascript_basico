@@ -35,3 +35,6 @@ console.log("1"===1); // compara tipo y valor
 console.log("1" !==1);
 
 console.log(1/0);
+
+let numero10=4.567
+console.log(parseInt(numero10));
