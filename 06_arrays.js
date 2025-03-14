@@ -1,10 +1,16 @@
 //ARRAYS
+
+listaa= [1,2,3]
+console.log(listaa[4]);
+listaa[5]=[5]
+listaa
+console.log(listaa[-1]); 
 // Un array puede contener cualquier tipo de dato
 // let frutas = [1, 1.2, "Hola", true, [4, 6, 7]]
 let frutas = ["kiwi", "pera", "fresa", "pomelo"]
 //               0       1        2        3
 console.log(frutas);
-frutas[3] = "limón"
+frutas[0] = "limón"
 console.log(frutas);
 
 console.log(frutas.at(-1));
