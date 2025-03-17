@@ -1,10 +1,10 @@
 //ARRAYS
 
-listaa= [1,2,3]
-console.log(listaa[4]);
-listaa[5]=[5]
-listaa
-console.log(listaa[-1]); 
+// listaa= [1,2,3]
+// console.log(listaa[4]);
+// listaa[5]=[5]
+// listaa
+// console.log(listaa[-1]); 
 // Un array puede contener cualquier tipo de dato
 // let frutas = [1, 1.2, "Hola", true, [4, 6, 7]]
 let frutas = ["kiwi", "pera", "fresa", "pomelo"]
@@ -67,6 +67,7 @@ let extraccion = frutas.slice(1,3)
 console.log(extraccion);
 
 // Ordenar el array y guardarlo en una copia
+// toSorted ordena los elementos de menor a mayor
 let frutasOrdenadas = frutas.toSorted()
 console.log(frutasOrdenadas);
 
