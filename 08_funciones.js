@@ -72,6 +72,7 @@ console.log(sumar3(3,4));
 
 
 let sumar4 = (num1,num2) =>  num1 + num2
+
 console.log(sumar4(3,4));
 
 //=======================================================
