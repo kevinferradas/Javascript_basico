@@ -6,22 +6,24 @@
     <title>Etiquetas de formulario</title>
     <style>
 
-        * {
-            margin:0;
+* {
+            margin: 0;
             padding: 0;
             box-sizing: border-box;
             font-family: Arial, Helvetica, sans-serif;
         }
+
         main {
             max-width: 80%;
-            margin:5% auto;
+            margin: 5% auto;
         }
 
         div {
             margin: 2rem 1rem;
         }
 
-        button, input[type="button"] {
+        button,
+        input[type="button"] {
             padding: 5px 10px;
         }
 
@@ -34,9 +36,16 @@
             margin-top: 1rem;
         }
 
-        input[type="radio"]+label {
-                display: inline;
-                margin-left: 1rem;
+        input[type="radio"] + label {
+            display: inline;
+            margin-left: 1rem;
+        }
+        fieldset {
+            margin: 2rem 0;
+        }
+
+        textarea {
+            width: 80%;
         }
 
     </style>
@@ -61,7 +70,8 @@
                 maxlength="10"
                 pattern="[A-Za-z]{5,10}"
                 title = "Escribe tu nombre (5 caracteres mínimo y 10 máximo)"
-                value ="Pepe ">
+                value ="Pepe "
+                >
                 
                 
                 <label for="password">Contraseña : </label>
@@ -110,15 +120,93 @@
 
             <fieldset>
                 <legend>Radio buttons</legend>
-                <input type="radio" name="colores" id="rojo" checked>
+                <input type="radio" name="colores" id="rojo" value = "rojo" checked>
                 <label for="rojo">Color rojo</label>
 
-                <input type="radio" name="colores" id="azul">
+                <input type="radio" name="colores" id="azul" value = "azul">
                 <label for="azul">Color azul</label>
 
-                <input type="radio" name="colores" id="verde">
+                <input type="radio" name="colores" id="verde" value = "verde">
                 <label for="verde">Color verde</label>
 
+            </fieldset>
+
+            <fieldset>
+                <legend>Checkbox</legend>
+                <div>
+                    <input type="checkbox" name="lectura" id="lectura">
+                    <label for="lectura">He leído las condiciones... </label>
+                    <input type="checkbox" name="condiciones" id="condiciones">
+                    <label for="condiciones">Acepto las condiciones</label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Fechas</legend>
+                <div>
+                    <label for="date">Date</label>
+                    <input type="date" name="date" id="date">
+                </div>
+
+                 <div>
+                    <label for="datetime-local">datetime-local</label>
+                    <input type="datetime-local" name="datetime-local" id="datetime-local">
+                </div>
+
+                <div>
+                    <label for="time">time (horas)</label>
+                    <input type="time" name="time" id="time">
+                </div>
+
+                <div>
+                    <label for="week">week</label>
+                    <input type="week" name="week" id="week">
+
+                </div>
+
+                <div>
+                    <label for="month">month</label>
+                    <input type="month" name="month" id="month">
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Varios</legend>
+                <label for="color">color</label>
+                <input type="color" name="color" id="color">
+
+                <label for="file">file</label>
+                <input type="file" name="file" id="file" multiple>
+
+                <label for="search">search</label>
+                <input type="search" name="search" id="search">
+
+                <label for="range">range</label>
+                <input type="range" name="range" id="range">
+            </fieldset>
+
+            <fieldset>
+                <legend>Textarea</legend>
+                <label for="textarea">Escribe tu mensaje</label>
+                <textarea name="textarea" id="textarea" >sd</textarea>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Listas de elementos</legend>
+                <div>
+                    <label for="modelos">Elige el modelo</label>
+                    <select name="modelos" id="modelos">
+                        <option value="Audi">Audi</option>
+                        <option value="Mercedes">Mercedes</option>
+                        <option value="Seat">Seat</option>
+                    </select>
+
+                </div>
+
+                <div>
+                    <label for="usuarios">Busca al usuario</label>
+                    <datalist></datalist>
+                </div>
             </fieldset>
         </form>
     </main>
