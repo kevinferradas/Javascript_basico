@@ -10,7 +10,6 @@ num2 = 3
 
 const mensaje ="Es el momento del descanso"
 // mensaje = " Pues no habrá descanso"
-
 let num3
 
 console.log(typeof num3);
