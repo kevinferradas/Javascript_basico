@@ -81,3 +81,4 @@ let [fruta1, fruta2, fruta3, fruta4, fruta5] = frutas
 console.log(fruta1);
 
 // Se pueden unir dos arrays
+

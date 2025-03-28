@@ -87,3 +87,5 @@ const listaFrutas = ["kiwi", "piña", "pera"]
 listaFrutas.forEach( (fruta) => {
     console.log(fruta);
 })
+
+
